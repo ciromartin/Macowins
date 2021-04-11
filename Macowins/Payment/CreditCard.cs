@@ -35,6 +35,6 @@
             Fees = fees;
         }
 
-        public double GetPrice(double price) => (Surcharge + price * 0.01) * price;
+        public double GetPrice(double price, int quantity) => (Surcharge + (price * 0.01 * quantity)) * price;
     }
 }
