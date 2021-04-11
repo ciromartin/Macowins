@@ -9,6 +9,6 @@ namespace Macowins.Payment
 {
     public class Cash : IPayment
     {
-        public double GetPrice(Wear wear) => wear.GetPrice();
+        public double GetPrice(double price) => price;
     }
 }

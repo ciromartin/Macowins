@@ -9,6 +9,6 @@ namespace Macowins.Payment
 {
     public interface IPayment
     {
-        double GetPrice(Wear wear);
+        double GetPrice(double price);
     }
 }

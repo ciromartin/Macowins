@@ -1,6 +1,4 @@
-﻿using Macowins.Domain;
-
-namespace Macowins.Payment
+﻿namespace Macowins.Payment
 {
     public class CreditCard : IPayment
     {
@@ -37,10 +35,6 @@ namespace Macowins.Payment
             Fees = fees;
         }
 
-        public double GetPrice(Wear wear)
-        {
-            var price = wear.GetPrice();
-            return (Surcharge + price * 0.01) * price;
-        }
+        public double GetPrice(double price) => (Surcharge + price * 0.01) * price;
     }
 }

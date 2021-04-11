@@ -1,9 +1,7 @@
-﻿using Macowins.Domain;
-
-namespace Macowins.State
+﻿namespace Macowins.State
 {
     public interface IState
     {
-        double GetPrice(Wear wear);
+        double GetPrice(double basePrice);
     }
 }

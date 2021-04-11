@@ -6,6 +6,6 @@ namespace Macowins.State
     {
         public double Discount { get;private set; }
         public Promotion(double discount) => this.Discount = discount;
-        public double GetPrice(Wear wear) => wear.BasePrice - this.Discount;
+        public double GetPrice(double basePrice) => basePrice - this.Discount;
     }
 }

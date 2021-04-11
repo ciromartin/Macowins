@@ -4,6 +4,6 @@ namespace Macowins.State
 {
     public class Sale : IState
     {
-        public double GetPrice(Wear wear) => wear.BasePrice * 0.5;
+        public double GetPrice(double basePrice) => basePrice * 0.5;
     }
 }

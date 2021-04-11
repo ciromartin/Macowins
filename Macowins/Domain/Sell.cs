@@ -20,7 +20,7 @@ namespace Macowins.Domain
 
         public double GetTotal()
         {
-            return Quantity * Payment.GetPrice(Wear);
+            return Quantity * Payment.GetPrice(Wear.GetPrice());
         }
     }
 }

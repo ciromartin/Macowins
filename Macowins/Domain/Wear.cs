@@ -24,6 +24,6 @@ namespace Macowins.Domain
 
         public void SetState(IState state) => State = state;
 
-        public double GetPrice() => State.GetPrice(this);
+        public double GetPrice() => State.GetPrice(this.BasePrice);
     }
 }

@@ -4,6 +4,6 @@ namespace Macowins.State
 {
     public class New : IState
     {
-        public double GetPrice(Wear wear) => wear.BasePrice;
+        public double GetPrice(double basePrice) => basePrice;
     }
 }
